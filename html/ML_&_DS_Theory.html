@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>J Wilson Peoples Portfolio Website </title>
+    <title>Theory</title>
   </head>
 
 
@@ -14,43 +14,31 @@
 
 
   <style>
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
-      #intro {
-        margin-top: -58.59px;
+
+    #intro {
+        margin-top: -100px;
         background-image: url("/photos/IMG_4659.jpg");
         background-position: 50% 60%;
-        background-size: 100%;
-        height: 75vh;
+        background-size: cover;
+        height: auto;
       }
 
       #mask{
-          background:rgb(0,0,0,.4);
+          background:rgb(0,0,0,.3);
           background-size: cover;
           background-position: 50% 60%;
           height: 75vh;
           mask-image: none;
           -webkit-mask-image: none;
         }
+
+    
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
     }
 
-    .navbar .nav-link {
-      color: #fff !important;
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
 
     .b-example-divider {
       height: 3rem;
@@ -71,55 +59,61 @@
       fill: currentColor;
     }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
+
+    .navbar .nav-link {
+      color: #fff !important;
     }
 
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
 
-    .card-img-top {
+    /* Height for devices larger than 772px */
+    @media (min-width: 772px) {
+      #intro {
+        margin-top: -100px;
+        background-image: url("/photos/IMG_4659.jpg");
+        background-position: 50% 60%;
+        background-size: 100%;
+        height: 75vh;
+      }
+
+      #mask{
+          background:rgb(0,0,0,.3);
+          background-size: cover;
+          background-position: 50% 60%;
+          height: 75vh;
+          mask-image: none;
+          -webkit-mask-image: none;
+        }
+
+      .card-img-top {
       width: 100%;
       height: 20vw;
       object-fit: fill;
     }
+        
+    }
+
   </style>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+  <nav class="navbar navbar-expand navbar-dark">
     <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand nav-link" target="_blank" href="https://github.com/PeoplesJWilson?tab=repositories">
-        <strong>Github</strong>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
+      <div class="navbar-collapse navbar-expand" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-      
+
+
+          <li class="nav-item">
+            <a class="navbar-brand nav-link" target="blank" href="https://github.com/PeoplesJWilson?tab=repositories">
+              <strong>Github</strong>
+            </a>
+          </li>
+
 
           <li class="nav-item">
               <a class="nav-link" href="https://scholar.google.com/citations?user=qEBxPdwAAAAJ&hl=en" rel="nofollow"
                 target="_blank">Google Scholar</a>
-            </li>
+          </li>
 
-      
 
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -129,22 +123,25 @@
                 <a class="dropdown-item" href="/index.html">Home</a>
                 <a class="dropdown-item" href="/html/Projects.html">Projects</a>
                 <a class="dropdown-item" href="/html/Notebooks.html">Notebooks</a>
-                <a class="dropdown-item" href="/html/ML_&_DS_Theory.html">ML & DS Theory</a>
+                <a class="dropdown-item" href="/html/ML_&_DS_Theory.html">Theory</a>
               </div>
             </li>
 
-        </ul>
 
+        </ul>
       </div>
   </nav>
+   <!-- Navbar -->
+
+
 
      <!-- Background image -->
      <div id="intro" class="bg-image shadow-2-strong">
       <div id="mask">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white col-lg-6 col-md-8 mx-auto" style="margin-top: 154.5px; margin-bottom: 22px;">
-            <h1 class="fw-light">Machine Learning & Data Science Theory</h1>
-          <p class="lead text-white">From Machine Learning textbook solutions to research papers I've authored, this page documents my ongoing journey of learning the theoretical underpinings of Machine Learning and Data Science.</p>
+            <h1 class="fw-light">Theory</h1>
+          <p class="lead text-white">This page documents my ongoing journey of learning the theoretical underpinings of Machine Learning and the Data Sciences.</p>
           <p>
             <a href="/index.html" class="btn btn-secondary my-2">Back to Home</a>
           </p>
@@ -152,28 +149,31 @@
         </div>
         </div>
     </div>
-    <!-- Background image -->   
+    <!-- Background image -->  
     <hr class="my-5" />
 </header>
 
-  
-<body>
-    
+ 
 
+<body>
+<!-- Portfolio Items -->  
   <main>
     <div class="album py-5 bg-dark">
       <div class="container">
-
         <div class="row">
-          
+
+
+
+          <!-- ENTRY -->  
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
+
               <img class="card-img-top" src="/photos/MD22_thumbnail.png" alt="MDS22 thumbnail" style="object-fit: fill;">
 
               <div class="card-body">
                 <p class="card-text"><strong>Talk Slides from SIAM Conference on Mathematics of Data Science</strong> <br>
-                In the Fall of 2022, I gave a talk on my research at the <a href="https://www.siam.org/conferences/cm/conference/mds22">SIAM Conference on Mathematics of Data Science (MDS22).</a> Attached are the slides I prepared for my talk.<br>
-                     </p>
+                In the Fall of 2022, I gave a talk on my research at the SIAM Conference on Mathematics of Data Science (<a href="https://www.siam.org/conferences/cm/conference/mds22">MDS22</a>). Attached are the slides I prepared for my talk.<br>
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="ML_&_DS_Theory/SIAM_MDS22_Talk__Copy_ (4).pdf" class = "btn btn-sm btn-outline-secondary" role="button">View</a>
@@ -181,16 +181,25 @@
                   <small class="text-muted">Talk Slides</small>
                 </div>
               </div>
+
             </div>
           </div>
+          <!-- ENTRY -->  
 
+
+
+
+
+          <!-- ENTRY -->  
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="/photos/poster.png" alt="poster thumbnail">
+
+              <img class="card-img-top" src="/photos/poster.png" alt="FOCM Poster thumbnail">
+
               <div class="card-body">
                 <p class="card-text"><strong> Poster from FoCM 2023</strong> <br>
-                 I was an invited poster presenter at the <a href="https://focm2023.org/">ninth conference of the Foundations of Computational Mathematics (FoCM) Society</a> in Paris during the Summer of 2023. Attached is a .pdf of my poster. <br>
-                     </p>
+                 I was an invited poster presenter at the ninth conference of the Foundations of Computational Mathematics (<a href="https://focm2023.org/">FoCM</a>) Society in Paris during the Summer of 2023. Attached is a .pdf of my poster. <br>
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="ML_&_DS_Theory/poster.pdf" class = "btn btn-sm btn-outline-secondary" role="button">View</a>
@@ -198,15 +207,25 @@
                   <small class="text-muted">Scientific Poster</small>
                 </div>
               </div>
+
+
             </div>
           </div>
+          <!-- ENTRY -->  
 
+
+
+
+
+          <!-- ENTRY -->  
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
+
               <img class="card-img-top" src="/photos/ESL_thumbnail.png" alt="ESL thumbnail">
+
               <div class="card-body">
                 <p class="card-text"><strong>Solutions to Elements of Statistical Learning</strong> <br>
-                  A key part of my Data Science journey has been solving exercies from the seminal textbook <a href="https://hastie.su.domains/ElemStatLearn/">Elements of Statistical Learning.</a> Here are my solutions to the exercises from this excellent book. <br>
+                  A key part of my Data Science journey has been solving exercies from the seminal textbook <a href="https://hastie.su.domains/ElemStatLearn/">ESL.</a> Here are my solutions to the exercises from this excellent book. <br>
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -215,13 +234,23 @@
                   <small class="text-muted">Textbook Solutions</small>
                 </div>
               </div>
+
+
             </div>
           </div>
+          <!-- ENTRY -->  
 
 
+
+
+
+
+          <!-- ENTRY -->  
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
+
               <img class="card-img-top" src="/photos/Spec_conv_thumbnail.png" alt="spectral convergence paper thumbnail">
+
               <div class="card-body">
                 <p class="card-text"><strong>Spectral Convergence of Symmetrized Graph Laplacian on Manifolds with Boundary</strong> <br>
                   Here is a highlighted paper I co-authored with my advisor. In this paper, we investigate some generalizations of the important nonlinear dimensionality reduction technique <a href= "https://www.sciencedirect.com/science/article/pii/S1063520306000546">Diffusion Maps.</a><br>
@@ -233,15 +262,23 @@
                   <small class="text-muted">Highlighted Paper</small>
                 </div>
               </div>
+
+
             </div>
           </div>
+          <!-- ENTRY -->  
 
+
+
+          <!-- ENTRY -->  
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
+
               <img class="card-img-top" src="/photos/RBF_thumbnail.png" alt="RBF thumbnail">
+
               <div class="card-body">
                 <p class="card-text"><strong>Radial Basis Approximation of Tensor Fields on Manifolds: From Operator Estimation to Manifold Learning </strong> <br>
-                  Here is another highlighted paper. In this project, we use Radial Basis Functions (RBFs) and local tangent space approximation to learn many different operators associated to an unknown manifold. We include considerations for using our algorithms with large amounts of data. <br>
+                  Here is another highlighted paper. In this project, we use Radial Basis Functions (RBFs) and local tangent space approximation to learn many different operators associated to an unknown manifold. <br>
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -250,22 +287,22 @@
                   <small class="text-muted">Highlighted Paper</small>
                 </div>
               </div>
+
+
             </div>
           </div>
+          <!-- ENTRY -->  
 
-          
+  
+
         </div>
       </div>
     </div>
-
-
-
   </main>
 
-
-
-  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-      
+  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>     
+  
 </body>
+
+
 </html>
