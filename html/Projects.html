@@ -15,27 +15,24 @@
 
 
   <style>
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
       #intro {
-        margin-top: -58.59px;
+        margin-top: -100px;
         background-image: url("/photos/IMG_0548.JPG");
         background-position: 50% 47.3%;
         background-size: 100%;
-        height: 75vh;
+        height: auto;
       }
 
       #mask{
           background:rgb(0,0,0,.4);
           background-size: cover;
           background-position: 50% 47.3%;
-          height: 75vh;
+          height: auto;
           mask-image: none;
           -webkit-mask-image: none;
         }
-    }
 
-    .navbar .nav-link {
+        .navbar .nav-link {
       color: #fff !important;
     }
 
@@ -45,12 +42,6 @@
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
     }
 
     .b-example-divider {
@@ -72,72 +63,74 @@
       fill: currentColor;
     }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
     .card-img-top {
       width: 100%;
-      height: 20vw;
+      height: auto;
       object-fit: fill;
+    }
+
+
+
+    /* Height for devices larger than 772px */
+    @media (min-width: 772px) {
+      #intro {
+        margin-top: -100px;
+        background-image: url("/photos/IMG_0548.JPG");
+        background-position: 50% 47.3%;
+        background-size: 100%;
+        height: 75vh;
+      }
+
+      #mask{
+          background:rgb(0,0,0,.4);
+          background-size: cover;
+          background-position: 50% 47.3%;
+          height: 75vh;
+          mask-image: none;
+          -webkit-mask-image: none;
+        }
+
+      .card-img-top {
+        width: 100%;
+        height: 20vw;
+        object-fit: fill;
+    }
     }
   </style>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand nav-link" target="_blank" href="https://github.com/PeoplesJWilson?tab=repositories">
-        <strong>Github</strong>
-      </a>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand navbar-dark">
+  <div class="container-fluid">
+    <div class="navbar-collapse navbar-expand" id="navbarExample01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+        <li class="nav-item">
+          <a class="navbar-brand nav-link" target="blank" href="https://github.com/PeoplesJWilson?tab=repositories">
+            <strong>Github</strong>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://scholar.google.com/citations?user=qEBxPdwAAAAJ&hl=en" rel="nofollow"
+              target="_blank">Google Scholar</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/index.html">Home</a>
+              <a class="dropdown-item" href="/html/Projects.html">Projects</a>
+              <a class="dropdown-item" href="/html/Notebooks.html">Notebooks</a>
+              <a class="dropdown-item" href="/html/ML_&_DS_Theory.html">Theory</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+</nav>
+ <!-- Navbar -->
 
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-      
 
-          <li class="nav-item">
-              <a class="nav-link" href="https://scholar.google.com/citations?user=qEBxPdwAAAAJ&hl=en" rel="nofollow"
-                target="_blank">Google Scholar</a>
-            </li>
-
-      
-
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="/index.html">Home</a>
-                <a class="dropdown-item" href="/html/Projects.html">Projects</a>
-                <a class="dropdown-item" href="/html/Notebooks.html">Notebooks</a>
-                <a class="dropdown-item" href="/html/ML_&_DS_Theory.html">ML & DS Theory</a>
-              </div>
-            </li>
-
-        </ul>
-
-      </div>
-  </nav>
 
      <!-- Background image -->
     <div id="intro" class="bg-image shadow-2-strong">
@@ -145,7 +138,7 @@
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white col-lg-6 col-md-8 mx-auto" style="margin-top: 154.5px; margin-bottom: 130px;">
             <h1 class="fw-light">Projects</h1>
-          <p class="lead text-white"> This page contains some end-to-end Machine Learning | Data Engineering Projects. </p>
+          <p class="lead text-white"> This page contains end-to-end Machine Learning | Data Engineering Projects. </p>
           <p>
             <a href="https://github.com/PeoplesJWilson?tab=repositories" class="btn btn-primary my-2">View my Projects on Github</a>
             <a href="/index.html" class="btn btn-secondary my-2">Back to Home</a>
@@ -154,7 +147,8 @@
         </div>
       </div>
     </div>
-    <!-- Background image -->   
+    <!-- Background image -->  
+
     <hr class="my-5" />
 </header>
 
@@ -165,13 +159,19 @@
       <div class="container">
         <div class="row"> 
 
+
+
+
+           <!-- ENTRY -->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="/photos/semi_torus_background.JPG" alt="project diagram" style="object-fit: cover;">
+
+              <img class="card-img-top" src="/photos/semi_torus_background.JPG" alt="BoundaryDM Thumbnail" style="object-fit: cover;">
 
               <div class="card-body">
                 <p class="card-text"><strong>BoundaryDM Library</strong> <br>
-                  This project consists of an sklearn style deployment of a novel technique for nonlinear dimensionality reduction, developed by me and my advisor. </p>
+                  This project consists of an sklearn style deployment of a novel technique for nonlinear dimensionality reduction, developed by me and my advisor. 
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://github.com/PeoplesJWilson/BoundaryDM" class = "btn btn-sm btn-outline-secondary" role="button">View</a>
@@ -179,57 +179,76 @@
                   <small class="text-muted">Machine Learning, optimization, scipy</small>
                 </div>
               </div>
+
             </div>
           </div>
+          <!-- ENTRY -->
 
+
+
+
+
+          <!-- ENTRY -->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="/photos/dag_diagram_crop.png" alt="project diagram" style="object-fit: cover;">
+
+              <img class="card-img-top" src="/photos/dag_diagram_crop.png" alt="NBA Pipeline Thumbnail" style="object-fit: cover;">
 
               <div class="card-body">
                 <p class="card-text"><strong> NBA Podcast Data Pipeline with Airflow</strong> <br>
-                  In this project, I use airflow to create a data pipeline which automatically downloads podcasts and stores podcast metadata in an SQLite database. </p>
+                  In this project, I use airflow to create a data pipeline which automatically downloads podcasts and stores podcast metadata in an SQLite database. 
+                </p>
+
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://github.com/PeoplesJWilson/nba-podcast-pipeline" class = "btn btn-sm btn-outline-secondary" role="button">View</a>
                   </div>
                   <small class="text-muted">Airflow, ETLs</small>
                 </div>
+
               </div>
+
             </div>
           </div>
+          <!-- ENTRY -->
 
 
-        <div class="col-md-4">
+
+
+
+          <!-- ENTRY -->
+          <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="/photos/reddit_pipeline_diagram_crop.png" alt="project diagram" style="object-fit: cover;">
+
+              <img class="card-img-top" src="/photos/reddit_pipeline_diagram_crop.png" alt="Reddit ETL Thumbnail" style="object-fit: cover;">
 
               <div class="card-body">
                 <p class="card-text"><strong>Cloud Based Reddit ETL with Airflow</strong> <br>
-                  In this project, we build a data pipeline which extracts data using the reddit API, transforms the extracted data into a structured format, and loads the result into an MySQL database.</p>
+                  In this project, we build a data pipeline which extracts data using the reddit API, transforms the extracted data into a structured format, and loads the result into an MySQL database.
+                </p>
+
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://github.com/PeoplesJWilson/aws-reddit-etl" class = "btn btn-sm btn-outline-secondary" role="button">View</a>
                   </div>
                   <small class="text-muted">Airflow, MySQL, ETLs, AWS</small>
                 </div>
+
               </div>
+
             </div>
           </div>
+          <!-- ENTRY -->
+
 
           
+
         </div>
       </div>
     </div>
 
 
-
   </main>
-
-
-
-  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-      
+  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
 </body>
 </html>
