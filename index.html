@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="dark">
   <head>
-
-    <script src="/docs/5.3/assets/js/color-modes.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +12,7 @@
     <style>
       #intro {
         margin-top: -100px;
-        background-image: url("/photos/trolltunga.JPG");
+        background-image: url("photos/trolltunga.JPG");
         background-size: cover;
         background-position: 50% 20%;
         height: 100vh;
@@ -29,10 +27,10 @@
         }
 
       .img-fluid {
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-}
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+      }
 
       /* Height for devices larger than 576px */
       @media (min-width: 772px) {
@@ -40,27 +38,32 @@
           width: 100%;
           height: 20vw;
           object-fit: fill;
-}
-
+        }
       }
 
       .navbar .nav-link {
         color: #fff !important;
       }
 
-
+      /* Equal-height cards: body stretches, button row pinned to bottom */
+      .card.h-100 .card-body {
+        display: flex;
+        flex-direction: column;
+      }
+      .card.h-100 .card-body .card-actions {
+        margin-top: auto;
+      }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    <!-- Navbar -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand navbar-dark">
     <div class="container-fluid">
       <div class="navbar-collapse navbar-expand" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="navbar-brand nav-link" target="blank" href="https://github.com/PeoplesJWilson?tab=repositories">
+            <a class="navbar-brand nav-link" target="_blank" href="https://github.com/PeoplesJWilson?tab=repositories">
               <strong>Github</strong>
             </a>
           </li>
@@ -73,16 +76,15 @@
                 Portfolio
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="/index.html">Home</a>
-                <a class="dropdown-item" href="/html/Projects.html">Projects</a>
-                <a class="dropdown-item" href="/html/Notebooks.html">Notebooks</a>
-                <a class="dropdown-item" href="/html/ML_&_DS_Theory.html">Theory</a>
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="html/ML_&_DS_Theory.html">Theory</a>
+                <a class="dropdown-item" href="html/Projects.html">Projects</a>
+                <a class="dropdown-item" href="html/Notebooks.html">Notebooks</a>
               </div>
             </li>
         </ul>
       </div>
   </nav>
-
 
 
     <!-- Background image -->
@@ -92,7 +94,7 @@
           <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white" style="margin-top: 304.5px; margin-bottom: 178px;">
               <h1> J. Wilson Peoples</h1>
-              <p class="lead">Machine Learning Researcher | Aspriring Data Engineer </p>
+              <p class="lead">Principal AI/ML Engineer | Mathematician</p>
               <p class="lead">
               <a href="#learn-more" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn More</a>
               </p>
@@ -111,7 +113,7 @@
   <main id = "learn-more" class="mt-5">
     <div class="container">
         <hr class="my-5" />
-      <!--Section: Content-->
+      <!--Section: About Me-->
       <section id="about_me">
         <div class="row">
           <div class="col-md-6 gx-5 mb-4">
@@ -126,37 +128,98 @@
           <div class="col-md-6 gx-5 mb-4">
             <h4><strong>About Me</strong></h4>
             <p>
-              I am currently a Research Assistant and PhD Candidate in the Department of Mathematics at Penn State University. 
-              My research takes place within the vast fields of <strong>Machine Learning</strong> and <strong>Data Science.</strong> Some recent projects I've worked on involve: 
+              I am a <strong>Principal AI/ML Engineer</strong> at CleanSlate Technology Group, where I am a technical lead on the AI side of the firm's Data &amp; AI practice. I design, train, and deploy machine learning systems that serve millions of predictions per day in production.
+            </p>
+            <p>
+              I hold a <strong>Ph.D. in Mathematics</strong> from Penn State (2024), and my research spans two mathematical lives:
               <ul>
-                <li>Manifold Learning</li>
-                <li>Transfer Learning</li>
-                <li> Operator Estimation</li>
+                <li><strong>Machine learning &amp; applied mathematics:</strong> manifold learning, operator estimation, and numerical methods for PDEs on unknown manifolds</li>
+                <li><strong>Pure mathematics:</strong> operator algebras, noncommutative geometry, and K-theory</li>
               </ul>
             </p>
-            <p>When I'm not actively researching, I enjoy pursuing my passion for the practical use of data in the real world through the completion of <strong>Data Engineering</strong> and <strong>Data Science</strong> projects.</p>
-            <p> Below are some highlighted projects that I've completed on my journey from <strong>Theorist to Practitioner</strong>. 
-            For a complete list of projects and notebooks, please explore this website using the <strong>Portfolio</strong> dropdown menu at the top left of each page. Alternatively, checkout my github. </p>
+            <p>
+              I am the author of <strong>10 papers and preprints</strong> (80+ citations) across these areas, published in venues including the <em>Journal of Machine Learning Research</em>, <em>Foundations of Data Science</em>, and the <em>Journal of Noncommutative Geometry</em>.
+            </p>
+            <p> Below you'll find highlighted research, engineering projects, and data notebooks.
+            For the complete collection, explore this website using the <strong>Portfolio</strong> dropdown menu at the top left of each page, or check out my Github. </p>
           </div>
         </div>
       </section>
-      <!--Section: Content-->
+      <!--Section: About Me-->
 
       <hr class="my-5" />
 
-      <!--Section: Content-->
+      <!--Section: Highlighted Research-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Highlighted Research</strong></h4>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Spectral Convergence of Symmetrized Graph Laplacian on Manifolds with Boundary</h5>
+                <p class="card-text">
+                  With J. Harlim. We prove convergence rates for eigenpairs of graph Laplacians toward those of the Laplace–Beltrami operator on manifolds with boundary, the theoretical backbone of diffusion-maps-style manifold learning.
+                </p>
+                <p class="card-text"><small class="text-muted">Foundations of Data Science, 2025</small></p>
+                <div class="card-actions">
+                  <a href="https://www.aimsciences.org/article/doi/10.3934/fods.2025005" class="btn btn-primary btn-sm m-1" target="_blank">Journal</a>
+                  <a href="https://arxiv.org/abs/2110.06988" class="btn btn-outline-secondary btn-sm m-1" target="_blank">arXiv</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Radial Basis Approximation of Tensor Fields on Manifolds</h5>
+                <p class="card-text">
+                  With J. Harlim and S. W. Jiang. We develop radial-basis-function methods for estimating differential operators on tensor fields over unknown manifolds identified from point-cloud data, taking us from operator estimation all the way to manifold learning.
+                </p>
+                <p class="card-text"><small class="text-muted">Journal of Machine Learning Research, 24(345), 2023</small></p>
+                <div class="card-actions">
+                  <a href="https://www.jmlr.org/papers/v24/22-1193.html" class="btn btn-primary btn-sm m-1" target="_blank">Journal</a>
+                  <a href="https://arxiv.org/abs/2208.08369" class="btn btn-outline-secondary btn-sm m-1" target="_blank">arXiv</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Aspects of Noncommutative Geometry of Bunce–Deddens Algebras</h5>
+                <p class="card-text">
+                  With S. Klimek and M. McBride. We define smooth subalgebras of Bunce–Deddens C*-algebras and study their noncommutative geometry: derivations, K-theory, and K-homology.
+                </p>
+                <p class="card-text"><small class="text-muted">Journal of Noncommutative Geometry, 17(4), 2023</small></p>
+                <div class="card-actions">
+                  <a href="https://ems.press/journals/jncg/articles/12376888" class="btn btn-primary btn-sm m-1" target="_blank">Journal</a>
+                  <a href="https://arxiv.org/abs/2112.00572" class="btn btn-outline-secondary btn-sm m-1" target="_blank">arXiv</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p><a href="html/ML_&_DS_Theory.html" class="btn btn-outline-light">View All Publications</a></p>
+      </section>
+      <!--Section: Highlighted Research-->
+
+      <hr class="my-5" />
+
+      <!--Section: Highlighted Projects-->
       <section class="text-center">
         <h4 class="mb-5"><strong>Highlighted Projects</strong></h4>
 
         <div class="row">
 
-
-
-
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="/photos/serverless-podcast-pipeline.png" class="img-fluid" alt="Display Image" />
+                <img src="photos/serverless-podcast-pipeline.png" class="img-fluid" alt="Serverless podcast pipeline diagram" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -164,18 +227,19 @@
               <div class="card-body">
                 <h5 class="card-title"> Serverless Podcast Transcription Pipeline</h5>
                 <p class="card-text">
-                  In this project, we leverage AWS Lambda, along with asynchronous AWS Transcribe & Comprehend jobs, to create an event based, fast podcast transcription pipeline.
+                  In this project, we leverage AWS Lambda, along with asynchronous AWS Transcribe &amp; Comprehend jobs, to create an event based, fast podcast transcription pipeline.
                 </p>
-                <a href="https://github.com/PeoplesJWilson/serverless-podcast-etl" class="btn btn-primary">View Project</a>
+                <div class="card-actions">
+                  <a href="https://github.com/PeoplesJWilson/serverless-podcast-etl" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
               </div>
             </div>
           </div>
 
-
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/spark-streaming.png" class="img-fluid" alt="Display Image" />
+                <img src="photos/spark-streaming.png" class="img-fluid" alt="Spark streaming architecture diagram" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -183,18 +247,19 @@
               <div class="card-body">
                 <h5 class="card-title"> Streaming with Apache Spark (Scala) </h5>
                 <p class="card-text">
-                  In this project, we build a cloud native, fully dockerized real time data pipeline: orchestrated with Kubernetes, powered by Spark. 
+                  In this project, we build a cloud native, fully dockerized real time data pipeline: orchestrated with Kubernetes, powered by Spark.
                 </p>
-                <a href="https://github.com/PeoplesJWilson/spark-streaming-k8s" class="btn btn-primary">View Project</a>
+                <div class="card-actions">
+                  <a href="https://github.com/PeoplesJWilson/spark-streaming-k8s" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
               </div>
             </div>
           </div>
 
-
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/semi_torus_background.JPG" class="img-fluid" alt="Display Image" hieght="100% \9" />
+                <img src="photos/semi_torus_background.JPG" class="img-fluid" alt="Semi-torus manifold visualization" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -202,30 +267,31 @@
               <div class="card-body">
                 <h5 class="card-title">BoundaryDM Manifold Learning Library</h5>
                 <p class="card-text">
-                  This project consists of a "skikit-learn" style deployment of a novel technique for manifold learning / nonlinear dimensionality reduction, developed by me and my advisor.  
+                  This project consists of a scikit-learn style deployment of a novel technique for manifold learning / nonlinear dimensionality reduction, developed by me and my advisor.
                 </p>
-                <a href="https://github.com/PeoplesJWilson/BoundaryDM" class="btn btn-primary">View Project</a>
+                <div class="card-actions">
+                  <a href="https://github.com/PeoplesJWilson/BoundaryDM" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
               </div>
             </div>
           </div>
 
-
         </div>
       </section>
-      <!--Section: Content-->
-
+      <!--Section: Highlighted Projects-->
 
       <hr class="my-5" />
-      <!--Section: Content-->
+
+      <!--Section: Highlighted Notebooks-->
       <section class="text-center">
         <h4 class="mb-5"><strong>Highlighted Notebooks</strong></h4>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/pandas_and_sqlite3.jpeg" class="img-fluid" alt="Display Image"/>
+                <img src="photos/pandas_and_sqlite3.jpeg" class="img-fluid" alt="Pandas and SQLite3 logos"/>
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -233,19 +299,19 @@
               <div class="card-body">
                 <h5 class="card-title">Big Data Workflow with Pandas and SQLite3</h5>
                 <p class="card-text">
-                  In this notebook, demonstrate a workflow using pandas and SQLite3 which scales well with large data.
+                  In this notebook, we demonstrate a workflow using pandas and SQLite3 which scales well with large data.
                 </p>
-                <a href="/html/Notebooks/big_data_workflow.html" class="btn btn-primary">View Notebook</a>
+                <div class="card-actions">
+                  <a href="html/Notebooks/big_data_workflow.html" class="btn btn-primary">View Notebook</a>
+                </div>
               </div>
             </div>
           </div>
 
-
-
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/join_time_complexity_comparison.png" class="img-fluid" alt="Display Image"/>
+                <img src="photos/join_time_complexity_comparison.png" class="img-fluid" alt="Join time complexity comparison chart"/>
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -255,17 +321,17 @@
                 <p class="card-text">
                   In this notebook, we implement a few different join algorithms, and study their time and space complexity on real world datasets.
                 </p>
-                <a href="/html/Notebooks/Implementing Efficient Joins for Mobile App Dataset.html" class="btn btn-primary">View Notebook</a>
+                <div class="card-actions">
+                  <a href="html/Notebooks/Implementing Efficient Joins for Mobile App Dataset.html" class="btn btn-primary">View Notebook</a>
+                </div>
               </div>
             </div>
           </div>
 
-
-
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
+            <div class="card h-100">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/map_reduce.jpeg" class="img-fluid" alt="Display"/>
+                <img src="photos/map_reduce.jpeg" class="img-fluid" alt="MapReduce diagram"/>
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -275,76 +341,16 @@
                 <p class="card-text">
                   In this notebook, we implement a custom MapReduce framework in python, and use it to create a document search function.
                 </p>
-                <a href="/html/Notebooks/document_search_using_map_reduce.html" class="btn btn-primary">View Notebook</a>
+                <div class="card-actions">
+                  <a href="html/Notebooks/document_search_using_map_reduce.html" class="btn btn-primary">View Notebook</a>
+                </div>
               </div>
             </div>
           </div>
-
 
         </div>
       </section>
-      <!--Section: Content-->
-      <hr class="my-5" />
-      <section class="text-center">
-        <h4 class="mb-5"><strong>Highlighted Theoretical Projects</strong></h4>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/MD22_thumbnail.png" class="img-fluid" alt="Display" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Talk Slides from SIAM Conference on Mathematics of Data Science</h5>
-                <p class="card-text">
-                  In the Fall of 2022, I gave a talk on my research at the SIAM Conference on Mathematics of Data Science (<a href="https://www.siam.org/conferences/cm/conference/mds22">MDS22</a>). Attached are the slides I prepared for my talk.
-                </p>
-                <a href="html/ML_&_DS_Theory/SIAM_MDS22_Talk__Copy_ (4).pdf" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="/photos/poster.png" class="img-fluid" alt="Display" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Poster from FoCM 2023</h5>
-                <p class="card-text">
-                  I was an invited poster presenter at the ninth conference of the Foundations of Computational Mathematics (<a href="https://focm2023.org/">FoCM</a>) Society in Paris during the Summer of 2023. Attached is a .pdf of my poster. 
-                </p>
-                <a href="html/ML_&_DS_Theory/poster.pdf" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="photos/ESL_thumbnail.png" class="img-fluid" alt="Display Image" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Solutions to ESL</h5>
-                <p class="card-text">
-                  A key part of my Data Science journey has been solving exercies from the seminal textbook <a href="https://hastie.su.domains/ElemStatLearn/">Elements of Statistical Learning.</a> Here are my solutions to the exercises from this excellent book.
-                </p>
-                <a href="/html/ML_&_DS_Theory/Elements_of_Statistical_Learning__solutions_.pdf" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Section: Content-->
+      <!--Section: Highlighted Notebooks-->
 
       <hr class="my-5" />
     </div>
@@ -355,3 +361,4 @@
   <footer class="bg-light text-lg-start">
   </footer>
   <!--Footer-->
+</html>
